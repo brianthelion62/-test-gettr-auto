@@ -9,15 +9,18 @@ note: these steps are extracted and distilled from the following Cypress tutoria
     note: (do this step if there is no Jenkins job is set up yet and you want to run this local while pointing to a remote endpoint)
 - move this ZIP file into an appropriate project folder on your local machine (ie. "projects" folder on your desktop)
 - in a terminal window:
-    - install Node version 14 or higher (requiired): npm install -g npm
-    - install yarn: npm install -g yarn
+    - install Node version 14 or higher (requiired): sudo npm install -g npm >> enter password
+    - install yarn: sudo npm install -g yarn>> enter password
     - change directories into the repo
     - install the dependencies: yarn install
 
-- Open 2 separate terminals inside of VS Code
+- open Visual Studio Code (download here if you don't already have it: https://code.visualstudio.com/download
+- in VS Code, open the project 
+
+- open 2 separate terminals inside of VS Code (top level options>> terminal>> new terminal
 - in one, run yarn with this command: 
     - yarn start
-- in the other, run cypress with this command: 
+- add another terminal, them run cypress with this command: 
     - yarn cypress:open
 - when Cypress opens, select the test you want to run. For now, it is “login.spec.js”
 
